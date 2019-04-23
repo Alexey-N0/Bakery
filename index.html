@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Start Template">
+	<meta name="author" content="Admin">
+	<title>Bakery</title>
+
+	<link rel="icon" href="images/favicon-cakes.png">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<header class="header">
+	<nav class="container">
+		<div class="header-container">
+					
+					<a class="logo" href="#">
+						<img src="images/logotype.png">
+					</a>
+				
+
+					<ul class="menu">
+						<li class="menu-item">
+							<a href="#" class="menu-link">About PAUL</a>
+						</li>
+						<li class="menu-item">
+							<a href="#masterclass" class="menu-link">Masterclasses</a></li>
+
+						<li class="menu-item">
+							<a href="#restaurant" class="menu-link">Restaurant</a>
+						</li>
+						<li class="menu-item">
+							<a href="#contact" class="menu-link">Contacts</a>
+						</li>
+
+					</ul>
+			</div>
+
+			<div class="text-container">
+			<p class="title-block">The coffee is on & the bakery is fresh,
+       			 we are ready when you are
+			</p>
+			</div>
+	</nav>
+</header>
+
+<main>
+	<div class="main-container" id="masterclass">
+		<div class="text-block">
+			<h1 class="masterclass-section">PAUL MASTERCLASSES</h1>
+			<p class="subtitle">LEARN TO BE A BETTER BAKER - WITH THE EXPERTS AT PAUL</p>
+			<p class="plain-text">Improve your baking skills with a masterclass at a PAUL bakery. These fun, floury, evenings help you get to grips with the whole process of bread and pastry making, giving you the knowledge and confidence to bake fresh and delicious French bread and pastries at home.</p>
+		</div>
+		<p class="second-subtitle">ANNOUNCING 3 VERY SPECIAL EASTER MASTERCLASSES</p>
+		<div class="announcing-container">
+			<embed src="images/baker.svg">
+				<ul class="list-block">
+					<li  class="list-item">11th April: Daily Artisan Bread</li>
+					<li  class="list-item">12th April: Advanced Artisan Bread</li>
+					<li  class="list-item">13th April: The ABC of the Eclair</li>
+				</ul>
+		</div>
+		<div class="btn-container">
+			<button class="join-btn" type="button">join</button>
+		</div>
+		<div class="image-container">
+			<a class="image" href="#">
+				<img class="image-block" src="images/1.png">
+			</a>
+			<a class="image" href="#">
+				<img class="image-block" src="images/2.png">
+			</a>
+			<a class="image" href="#">
+				<img class="image-block" src="images/3.png">
+			</a>
+			<a class="image" href="#">
+				<img class="image-block" src="images/4.png">
+			</a>
+			
+		</div>
+		<div class="slider-preheader" id="restaurant">
+			<h1 class="slider-title">LE RESTAURANT DE PAUL</h1>
+			<p class="slider-plaintext">Le Restaurant de PAUL at Old Broad Street is a modern all-day restaurant featuring authentic French brasserie-style cuisine, as well as a destination wine, champagne and cocktail bar and an in-house bakery.</p>
+		</div>
+		<div class="slider-container">
+			<div class="arrow">
+				<img src="images/left-arrow.png">
+				<img src="images/right-arrow.png">
+			</div>
+			<img src="images/slider-photo.png">
+		</div>
+
+	</div>
+
+</main>
+
+<footer class="footer-container" id="contact">
+
+	<h1 class="contact">CONTACTS</h1>
+	<div class="contact-info">
+		<p>Tel: 020 7420 2070</p>
+		<p>Email: support@paul-uk.com</p>
+		<p>Available Monday to Friday 9:00 to 5:00pm </p>
+	</div>
+	<h1 class="paul-info">PAUL BAKER STREET</h1>
+	<div class="secondary-info">
+		<p>55 Baker Street Unit 65<br>London<br>W1U 8EW</p>
+		<p class="phone-number">0207 486 0626</p>
+	</div>
+
+	<section id="map"></section>
+
+
+
+	<h1 class="form-title">MANAGE YOUR MASTERCLASS BOOKING</h1>
+	<form class="form-block">
+		<input class="name-field" type="name" name="text">
+		<label class="form-name">Your name</label>
+		<input class="email-field" type="email" name="email">
+		<label class="email-address">Email address</label>
+	</form>
+		<div class="submit-container">
+			<button class="submit-btn" type="button">SUBMIT</button>
+		</div>
+</footer>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+  <script type="text/javascript">
+
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 17,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+
+
+        </script>
+
+<!-- LiveReload Script -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
